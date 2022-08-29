@@ -1,0 +1,29 @@
+<html>
+    <script>
+        function verificarNumeroPrimo(numero){
+            //contador para verificar a quantidade de divisores
+            var cont = 0;
+            var primo = "";
+            //laço de repetição até o numero que vamos verificar
+            for(var i=1; i<=numero; i++){
+                //verificando se é divisível
+                if(numero%i == 0){
+                    cont +=1;
+                }
+                //se contador for igual a 2 ele já é considerado primo
+                if (cont == 2){
+                    primo = `o numero ${numero} é primo`;
+                    
+                } 
+                else {
+                    primo = `o numero ${numero} não é primo`;
+                    
+                }
+                              
+            }
+
+            return primo;
+
+        }
+    </script>
+</html>
